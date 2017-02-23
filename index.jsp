@@ -11,6 +11,9 @@
 
   </head>
   <body>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
     <div class="container">
       <div class="row">
         <h1>Prueba MaterializeCSS</h1>
@@ -19,13 +22,17 @@
       <form action="usuarios.jsp">
         
         <div class="row">
-          <div class="input-field col s6">
-            <input type="text" name="titulo" placeholder="Título" id="titulo">
+          <div class="input-field col l4 m6 s12">
+            <input type="text" name="titulo" id="titulo">
             <label for="titulo">Título</label>
           </div>
-          <div class="input-field col s6">
-            <input type="number" min="1" name="numUsuarios" placeholder="Número de Usuarios" id="numUsuarios">
+          <div class="input-field col l4 m6 s12">
+            <input type="number" min="1" name="numUsuarios" id="numUsuarios">
             <label for="numUsuarios">Número de usuarios</label>
+          </div>
+          <div class="input-field col l4 m12 s12">
+            <input type="text" min="1" name="notas" id="numUsuarios">
+            <label for="notas">Anotaciones</label>
           </div>
         </div>
         
@@ -41,8 +48,6 @@
     
     
     
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+
   </body>
 </html>
